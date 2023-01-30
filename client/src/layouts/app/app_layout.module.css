@@ -1,0 +1,36 @@
+.container {
+    height: 100%;
+    width: 100%;
+}
+
+.themeComponent {
+    background-color: #64B5F6;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 5em;
+    height: 5em;
+    border-bottom-left-radius: 90%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    cursor: pointer;
+}
+
+.themeComponent button {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    margin-left: 1em;
+    margin-bottom: 1em;
+    cursor: pointer;
+}
+
+.white .themeComponent button {
+    color: black;
+}
+
+.white .themeComponent button {
+    color: white;
+}

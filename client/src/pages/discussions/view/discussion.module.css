@@ -1,0 +1,117 @@
+.discussion_container {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.discussion_container .main {
+    display: flex;
+    flex: 5;
+    flex-direction: column;
+}
+
+.discussion_container .main .header {
+    border-width: 0 0 1px 0;
+    border-style: solid;
+    padding-left: 10%;
+}
+
+.discussion_container .header.black {
+    border-color: white;
+}
+
+.discussion_container .header.white {
+    border-color: black;
+}
+
+.discussion_container .sidebar {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: start;
+    padding-left: 5%;
+    border-width: 0 0 0 1px;
+    border-style: solid;
+}
+
+.discussion_container .sidebar.black {
+    border-color: white;
+}
+
+.discussion_container .sidebar.white {
+    border-color: black;
+}
+
+.discussion_container .comments {
+    padding: 0 10% 0 10%;
+    word-break: break-all;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    flex: 1;
+}
+
+.discussion_container .new_comment {
+    margin: 0 10% 0 10%;
+}
+
+.discussion_container .new_comment.black {
+    background-color: #424242;
+}
+
+.discussion_container .new_comment.white {
+    background-color: white;
+}
+
+.discussion_container .new_comment input {
+    background-color: rgba(189, 189, 189, 0.4);
+    border-radius: 1em;
+    width: 80%;
+    margin: 0 0 .5em 0;
+    padding: 1em;
+}
+
+.discussion_container .new_comment form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.discussion_container .new_comment button {
+    background-color: #64B5F6;
+    border: none;
+    border-radius: 90%;
+    aspect-ratio: 1;
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+}
+
+.discussion_container .comment {
+    flex-direction: row;
+    align-self: start;
+    width: 60%;
+}
+
+.discussion_container .comment.mine {
+    display: flex;
+    align-self: end;
+    justify-content: end;
+}
+
+.discussion_container .text {
+    background-color: rgba(189, 189, 189, 0.4);
+    border-radius: 0 1em 1em 1em;
+    padding: .5em;
+}
+
+.discussion_container .text.mine {
+    background-color: rgba(100, 181, 246, 0.4);
+    border-radius: 1em 0 1em 1em;
+}
+
+.discussion_container p {
+    padding: 0;
+    margin: .5em 0 .5em 0;
+}
